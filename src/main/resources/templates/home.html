@@ -43,7 +43,7 @@
                     <a class="nav-link" th:href="@{/}">Accueil<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="@{/cours/afficherCours}">Voir nos cours</a>
+                    <a class="nav-link" th:href="@{/cours/afficherCours}">Voir nos cours</a>
                 </li>
             </ul>
             <form sec:authorize="!isFullyAuthenticated()" class="form-inline my-2 my-lg-0">
@@ -68,7 +68,7 @@
                     <div class="carousel-caption d-none d-md-block">
                         <h3>Activités aquatiques</h3>
                         <p>N'attendez plus, venez vous formez avec les plus grand chez AquaFun</p>
-                        <a th:href="@{/afficherCours}" class="btn btn-lg btn-light">Voir nos cours</a>
+                        <a th:href="@{/cours/afficherCours}" class="btn btn-lg btn-light">Voir nos cours</a>
                     </div>
                 </div>
                 <!-- Slide 2 -->
