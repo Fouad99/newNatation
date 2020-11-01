@@ -118,7 +118,7 @@ public class CoursController {
         User user = userRepository.findUserByUsername(e);
         Cours cours = new Cours(price,capacite,description,niveauValeur, user,Status.ACTIF);
         coursRepository.save(cours);
-        RedirectView rd = new RedirectView("/user/account");
+        RedirectView rd = new RedirectView("/user/history?id="+ user.getId());
         return rd;
     }
 }
